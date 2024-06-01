@@ -1,0 +1,25 @@
+/* .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.left-column {
+    width: 60%;
+    margin-right: 20px;
+}
+
+.right-column {
+    width: 40%;
+}
+
+.item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+} */
