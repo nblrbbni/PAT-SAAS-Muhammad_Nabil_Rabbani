@@ -1,77 +1,101 @@
 function FormComponent () {
+  const imageStyle = {
+    display: 'block',
+    margin: '0 auto'
+  }
+
   return (
     <>
-      <div className='container mb-5'>
+      <div className='container mt-5 pt-5 mb-5 pb-5' id='mereka'>
         <div className='row'>
           <div className='col-sm'>
-            <div id='carouselExample' class='carousel slide'>
-              <div class='carousel-inner'>
-                <div class='carousel-item active'>
-                  <img src={require('../images/Logo.png')} class='d-block w-100' alt='...' />
+            <div
+              id='carouselExampleAutoplaying'
+              className='carousel slide carousel-dark'
+              data-bs-ride='carousel'
+            >
+              <div className='carousel-inner'>
+                <div className='carousel-item active'>
+                  <img
+                    src={require('../images/Person1.png')}
+                    className='d-block'
+                    style={imageStyle}
+                    alt='...'
+                  />
                 </div>
-                <div class='carousel-item'>
-                  <img src={require('../images/Logo.png')} class='d-block w-100' alt='...' />
+                <div className='carousel-item'>
+                  <img
+                    src={require('../images/Person2.png')}
+                    className='d-block'
+                    style={imageStyle}
+                    alt='...'
+                  />
                 </div>
-                <div class='carousel-item'>
-                  <img src={require('../images/Logo.png')} class='d-block w-100' alt='...' />
+                <div className='carousel-item'>
+                  <img
+                    src={require('../images/Person3.png')}
+                    className='d-block'
+                    style={imageStyle}
+                    alt='...'
+                  />
                 </div>
               </div>
               <button
-                class='carousel-control-prev'
+                className='carousel-control-prev'
                 type='button'
-                data-bs-target='#carouselExample'
+                data-bs-target='#carouselExampleAutoplaying'
                 data-bs-slide='prev'
               >
                 <span
-                  class='carousel-control-prev-icon'
+                  className='carousel-control-prev-icon'
                   aria-hidden='true'
                 ></span>
-                <span class='visually-hidden'>Previous</span>
+                <span className='visually-hidden'>Previous</span>
               </button>
               <button
-                class='carousel-control-next'
+                className='carousel-control-next'
                 type='button'
-                data-bs-target='#carouselExample'
+                data-bs-target='#carouselExampleAutoplaying'
                 data-bs-slide='next'
               >
                 <span
-                  class='carousel-control-next-icon'
+                  className='carousel-control-next-icon'
                   aria-hidden='true'
                 ></span>
-                <span class='visually-hidden'>Next</span>
+                <span className='visually-hidden'>Next</span>
               </button>
             </div>
           </div>
           <div className='col-sm'>
             <form>
-              <div class='mb-3'>
-                <label for='exampleInputEmail1' class='form-label'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputEmail1' className='form-label'>
                   Nama
                 </label>
                 <input
                   type='text'
-                  class='form-control'
+                  className='form-control'
                   id='exampleInputEmail1'
                   aria-describedby='emailHelp'
                 />
               </div>
-              <div class='mb-3'>
-                <label for='exampleInputPassword1' class='form-label'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputPassword1' className='form-label'>
                   Email
                 </label>
                 <input
                   type='text'
-                  class='form-control'
+                  className='form-control'
                   id='exampleInputPassword1'
                 />
               </div>
-              <div class='mb-3'>
-                <label for='exampleInputPassword1' class='form-label'>
+              <div className='mb-3'>
+                <label htmlFor='exampleInputPassword1' className='form-label'>
                   Komentar
                 </label>
                 <textarea className='form-control'></textarea>
               </div>
-              <button type='submit' class='btn btn-primary'>
+              <button type='submit' className='btn btn-primary'>
                 Submit
               </button>
             </form>
@@ -82,4 +106,4 @@ function FormComponent () {
   )
 }
 
-export default FormComponent
+export default FormComponent;

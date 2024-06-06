@@ -3,7 +3,7 @@ function NavbarComponent () {
     <>
       <nav className='navbar navbar-expand-lg bg-body-tertiary fixed-top'>
         <div className='container'>
-          <a className='navbar-brand' to='/'>
+          <a href='#' className='nav-link navbar-brand'>
             <img src={require('../images/Logo.png')} height='50px' />
           </a>
           <button
@@ -20,18 +20,23 @@ function NavbarComponent () {
           <div className='collapse navbar-collapse' id='navbarSupportedContent'>
             <ul className='navbar-nav ms-auto mb-2 mb-lg-0'>
               <li className='nav-item'>
-                <a className='nav-link active' to='/'>
-                  Home
-                </a>
-              </li>
-              <li className='nav-item'>
-                <a className='nav-link' to='/about-us'>
+                <a href='#about' className='nav-link px-2 text-body-secondary'>
                   Profil Sekolah
                 </a>
               </li>
               <li className='nav-item'>
-                <a className='nav-link' to='/contact-us'>
-                  Contact Us
+                <a href='#mitra' className='nav-link px-2 text-body-secondary'>
+                  Kemitraaan
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a href='#review' className='nav-link px-2 text-body-secondary'>
+                  PPDB
+                </a>
+              </li>
+              <li className='nav-item'>
+                <a href='#mereka' className='nav-link px-2 text-body-secondary'>
+                  Kata Mereka
                 </a>
               </li>
             </ul>
@@ -42,4 +47,4 @@ function NavbarComponent () {
   )
 }
 
-export default NavbarComponent;
+export default NavbarComponent

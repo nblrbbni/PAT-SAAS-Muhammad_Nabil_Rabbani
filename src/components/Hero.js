@@ -1,32 +1,30 @@
 function HeroComponent () {
   return (
     <>
-      <div class='container mt-5'>
+      <div class='container mt-5 pt-5' id='about'>
         <div class='row flex-lg-row-reverse align-items-center g-5 py-5'>
           <div class='col-10 col-sm-8 col-lg-6'>
-            <img
-              src={require('../images/Hero.jpg')}
-              class='img-fluid'
-              alt='Bootstrap Themes'
-              width='700'
-              height='500'
-              loading='lazy'
-            />
+            <video width='100%' height='auto' controls>
+              <source src={require('../videos/Videobazma.mp4')} type='video/mp4' />
+              Your browser does not support HTML video.
+            </video>
           </div>
           <div class='col-lg-6'>
             <h1 class='display-5 fw-bold text-body-emphasis lh-1 mb-3'>
-              Responsive left-aligned hero with image
+              Merajut Asa, Menjejak & Menebar Manfaat
             </h1>
-            <p class='lead'>
-              Quickly design and customize responsive mobile-first sites with
-              Bootstrap, the world’s most popular front-end open source toolkit,
-              featuring Sass variables and mixins, responsive grid system,
-              extensive prebuilt components, and powerful JavaScript plugins.
+            <p class='lead' style={{textAlign: 'justify'}}>
+              Sekolah Menengah Kejuruan Teknologi Informasi Bazma (SMK TI BAZMA)
+              menyelenggarakan program pembelajaran yang ditempuh selama 4 tahun
+              dengan siswa-siswa yang berasal dari berbagai daerah di seluruh
+              Indonesia. SMK TI Bazma menyelenggarakan pendidikan dengan jurusan
+              SIJA (Sistem Informatika, Jaringan & Aplikasi) dengan kombinasi
+              kurikulum berbasis asrama.
             </p>
             <div class='d-grid gap-2 d-md-flex justify-content-md-start'>
               <button type='button' class='btn btn-primary btn-lg px-4 me-md-2'>
-                Primary
-              </button> 
+                Selengkapnya
+              </button>
             </div>
           </div>
         </div>
@@ -35,4 +33,4 @@ function HeroComponent () {
   )
 }
 
-export default HeroComponent;
+export default HeroComponent
