@@ -27,7 +27,7 @@ function FooterComponent () {
               </li>
             </ul>
             <p className='text-center text-body-secondary'>
-              Copyright © 2024 SMK TI Bazma
+              Copyright © 2024 | SMK TI Bazma
             </p>
           </footer>
         </div>
@@ -36,4 +36,4 @@ function FooterComponent () {
   )
 }
 
-export default FooterComponent
+export default FooterComponent;

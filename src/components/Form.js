@@ -1,8 +1,16 @@
+import React from 'react'
+
 function FormComponent () {
   const imageStyle = {
     display: 'block',
     margin: '0 auto'
   }
+
+  const images = [
+    { src: require('../images/Person1.png'), alt: 'Person 1' },
+    { src: require('../images/Person2.png'), alt: 'Person 2' },
+    { src: require('../images/Person3.png'), alt: 'Person 3' }
+  ]
 
   return (
     <>
@@ -15,30 +23,19 @@ function FormComponent () {
               data-bs-ride='carousel'
             >
               <div className='carousel-inner'>
-                <div className='carousel-item active'>
-                  <img
-                    src={require('../images/Person1.png')}
-                    className='d-block'
-                    style={imageStyle}
-                    alt='...'
-                  />
-                </div>
-                <div className='carousel-item'>
-                  <img
-                    src={require('../images/Person2.png')}
-                    className='d-block'
-                    style={imageStyle}
-                    alt='...'
-                  />
-                </div>
-                <div className='carousel-item'>
-                  <img
-                    src={require('../images/Person3.png')}
-                    className='d-block'
-                    style={imageStyle}
-                    alt='...'
-                  />
-                </div>
+                {images.map((image, index) => (
+                  <div
+                    key={index}
+                    className={`carousel-item ${index === 0 ? 'active' : ''}`}
+                  >
+                    <img
+                      src={image.src}
+                      className='d-block'
+                      style={imageStyle}
+                      alt={image.alt}
+                    />
+                  </div>
+                ))}
               </div>
               <button
                 className='carousel-control-prev'

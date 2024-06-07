@@ -13,7 +13,7 @@ function HeroComponent () {
             <h1 class='display-5 fw-bold text-body-emphasis lh-1 mb-3'>
               Merajut Asa, Menjejak & Menebar Manfaat
             </h1>
-            <p class='lead' style={{textAlign: 'justify'}}>
+            <p style={{textAlign: 'justify'}}>
               Sekolah Menengah Kejuruan Teknologi Informasi Bazma (SMK TI BAZMA)
               menyelenggarakan program pembelajaran yang ditempuh selama 4 tahun
               dengan siswa-siswa yang berasal dari berbagai daerah di seluruh
@@ -33,4 +33,4 @@ function HeroComponent () {
   )
 }
 
-export default HeroComponent
+export default HeroComponent;
