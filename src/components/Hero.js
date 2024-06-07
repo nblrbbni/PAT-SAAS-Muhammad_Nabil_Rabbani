@@ -3,7 +3,7 @@ function HeroComponent () {
     <>
       <div class='container mt-5 pt-5' id='about'>
         <div class='row flex-lg-row-reverse align-items-center g-5 py-5'>
-          <div class='col-10 col-sm-8 col-lg-6'>
+          <div class='col-12 col-sm-12 col-lg-6'>
             <video width='100%' height='auto' controls>
               <source src={require('../videos/Videobazma.mp4')} type='video/mp4' />
               Your browser does not support HTML video.
